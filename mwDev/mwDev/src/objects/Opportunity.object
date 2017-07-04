@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Mannai_Id__c</fullName>
+        <externalId>true</externalId>
+        <label>Account Mannai Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Bid_Submission_Date__c</fullName>
+        <description>Date when a bid or tender needs to be or was submitted to the customer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date when a bid or tender needs to be or was submitted to the customer</inlineHelpText>
+        <label>Bid Submission Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Business_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Units__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner.Division</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Business Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Cash_Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Cash Customer Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloseDate</fullName>
+        <inlineHelpText>Expected or Actual Date that the Opportunity will be awarded ie. contract signed</inlineHelpText>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Close_Date_By_Sales_User__c</fullName>
+        <description>This will be a hidden field. This field was created in order to store the close date updated by any user other than integration user. If a user changes the close date in Salesforce directly, it should not get overridden by ManERP Close Date. This field will be updated using WF field update.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This will be a hidden field. This field was created in order to store the close date updated by any user other than integration user. If a user changes the close date in Salesforce directly, it should not get overridden by ManERP Close Date.</inlineHelpText>
+        <label>Close Date By Sales User</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contract_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Order_Reference_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract/Order Reference Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DB_Competitor__c</fullName>
+        <description>This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and can delete this field.</description>
+        <externalId>false</externalId>
+        <label>DB Competitor</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Competitor A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Competitor B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Competitor C</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Enquiry_No__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Enquiry No</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Estimated_GM_Value__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount *  Estimated_GM__c</formula>
+        <label>Estimated GM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_GM__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Estimated gross margin (%)</inlineHelpText>
+        <label>Estimated GM (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsPrivate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Multiple_ICT_BU_s__c</fullName>
+        <externalId>false</externalId>
+        <label>Multiple ICT BUs</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Single BU</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Collaboration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Competition</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>NextStep</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Notes on revenue timing (contract dates)</inlineHelpText>
+        <label>Notes</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Opportunity_ID__c</fullName>
+        <displayFormat>O-{00000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Opportunity ID</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pricebook2Id</fullName>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Probability</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Software</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Protection__c</fullName>
+        <externalId>false</externalId>
+        <label>Protection</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Protected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Protected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Push_Counter__c</fullName>
+        <description>This field tracks many times an Opportunity has been pushed from month to month</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field tracks many times an Opportunity has been pushed from month to month</inlineHelpText>
+        <label>Push Counter</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quotation_No__c</fullName>
+        <externalId>true</externalId>
+        <label>Quotation No</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quote_Created_Date__c</fullName>
+        <description>Quote Created Date captured from ManERP</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Captures Quote Created Date from ManERP</inlineHelpText>
+        <label>Quote Created Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Reminder__c</fullName>
+        <description>The salesman will receive an email reminding him/her of the opportunity.</description>
+        <externalId>false</externalId>
+        <label>Reminder</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Man_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Man ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Section_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Section Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StageName</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Presentation</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>25</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Proposal/Price Quote</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>50</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Negotiation/Review</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Forecast</forecastCategory>
+                <probability>90</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Won</fullName>
+                <default>false</default>
+                <closed>true</closed>
+                <forecastCategory>Closed</forecastCategory>
+                <probability>100</probability>
+                <won>true</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+                <closed>true</closed>
+                <forecastCategory>Omitted</forecastCategory>
+                <probability>0</probability>
+                <won>false</won>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Supplier__c</fullName>
+        <externalId>false</externalId>
+        <label>Supplier</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SyncedQuoteId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TotalOpportunityQuantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Existing Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Unique_Key__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Unique Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor__c</fullName>
+        <externalId>false</externalId>
+        <label>Vendor</label>
+        <picklist>
+            <picklistValues>
+                <fullName>HPE ISS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPE BCS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPE SWD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPE ARUBA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPE TCS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPE SW</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HPE Security</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DDN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CommVault</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Perpetuuiti</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Silver Peak</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IBM Security</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fortinet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TrendMicro</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LanDesk</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Firemon</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IBM Analytics &amp; ECM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <listViews>
+        <fullName>AllOpportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Business_Units__c</columns>
+        <columns>Quotation_No__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Business_Units__c</field>
+            <operation>equals</operation>
+            <value>Manweir</value>
+        </filters>
+        <label>All Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingNextMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_MONTH</value>
+        </filters>
+        <label>Closing Next Month</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingThisMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Closing This Month</label>
+    </listViews>
+    <listViews>
+        <fullName>Default_Opportunity_Pipeline</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>LAST_N_MONTHS:3</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Presentation,Proposal/Price Quote,Negotiation/Review</value>
+        </filters>
+        <label>Opportunity Pipeline</label>
+    </listViews>
+    <listViews>
+        <fullName>HeadOffice</fullName>
+        <filterScope>Everything</filterScope>
+        <label>Head Office Opps</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpportunities</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>Quotation_No__c</columns>
+        <columns>Business_Units__c</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>Estimated_GM_Value__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>Business_Units__c</field>
+            <operation>equals</operation>
+            <value>Manweir</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>Won</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.WON</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Won</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.CLOSE_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Opportunity_ID__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Cash_Customer_Name_Mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>Account_Mannai_Id__c =&apos;CASH CUSTOMER&apos; &amp;&amp; ISBLANK( Cash_Customer_Name__c )</errorConditionFormula>
+        <errorMessage>Please fill Cash Customer Name</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>End_after_Start_Date</fullName>
+        <active>true</active>
+        <description>The End Date has to be same or later than Start Date</description>
+        <errorConditionFormula>Contract_End_Date__c &lt; Contract_Start_Date__c</errorConditionFormula>
+        <errorDisplayField>Contract_Start_Date__c</errorDisplayField>
+        <errorMessage>End Date cannot be before Start Date!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>GM_Percentage</fullName>
+        <active>true</active>
+        <description>GM% cannot be blank or 0</description>
+        <errorConditionFormula>AND(
+OR(
+ISBLANK(Estimated_GM__c ),
+Estimated_GM__c &lt;=0,
+Estimated_GM__c &gt;100
+),
+IsClosed=TRUE)</errorConditionFormula>
+        <errorDisplayField>Estimated_GM__c</errorDisplayField>
+        <errorMessage>Please fill in an Estimated GM% bigger than 0% and smaller than 100%!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lock_closed_opportunity_all_fields_Lost</fullName>
+        <active>false</active>
+        <description>No one can edit anything once deal is closed except from the system administrator.</description>
+        <errorConditionFormula>IF( 
+CreatedDate &lt;&gt; NOW(), 
+AND( 
+ISPICKVAL(PRIORVALUE(StageName),&quot;Closed Lost&quot;), 
+NOT($Profile.Name=&quot;System Administrator&quot;), 
+OR(($User.Id =&quot;005b0000003gFfk&quot;), 
+($User.Id=&quot;005b0000003Cuzg&quot;), 
+($User.Id=&quot;005b0000001Fn8k&quot;), 
+($User.Id=&quot;005b0000003Cuzb&quot;), 
+($User.Id=&quot;005b0000001k15j&quot;), 
+($User.Id=&quot;005b0000002wgs0&quot;), 
+($User.Id=&quot;005b0000003gmps&quot;), 
+($User.Id=&quot;005b0000004MOkO&quot;), 
+($User.Id=&quot;005b0000004YOxW&quot;), 
+($User.Id=&quot;005b0000004YTAe&quot;))), 
+AND( 
+ISPICKVAL(PRIORVALUE(StageName),&quot;Closed Lost&quot;), 
+NOT($Profile.Name&lt;&gt;&quot;System Administrator&quot;)) 
+)</errorConditionFormula>
+        <errorMessage>You cannot change a deal after the deal is closed. Please contact Administrator</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lock_closed_opportunity_all_fields_Won</fullName>
+        <active>false</active>
+        <description>No one can edit anything once deal is closed except from the system administrator.</description>
+        <errorConditionFormula>IF( 
+CreatedDate &lt;&gt; NOW(), 
+AND( 
+ISPICKVAL(PRIORVALUE(StageName),&quot;Closed Won&quot;), 
+NOT($Profile.Name=&quot;System Administrator&quot;), 
+OR(($User.Id =&quot;005b0000003gFfk&quot;), 
+($User.Id=&quot;005b0000003Cuzg&quot;), 
+($User.Id=&quot;005b0000001Fn8k&quot;), 
+($User.Id=&quot;005b0000003Cuzb&quot;), 
+($User.Id=&quot;005b0000001k15j&quot;), 
+($User.Id=&quot;005b0000002wgs0&quot;), 
+($User.Id=&quot;005b0000003gmps&quot;), 
+($User.Id=&quot;005b0000004MOkO&quot;), 
+($User.Id=&quot;005b0000004YOxW&quot;), 
+($User.Id=&quot;005b0000004YTAe&quot;))), 
+AND( 
+ISPICKVAL(PRIORVALUE(StageName),&quot;Closed Won&quot;), 
+NOT($Profile.Name&lt;&gt;&quot;System Administrator&quot;)) 
+)</errorConditionFormula>
+        <errorMessage>You cannot change a deal after the deal is closed. Please contact Administrator</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lock_closed_oppostunity</fullName>
+        <active>false</active>
+        <description>AND( 
+ISCHANGED( IsClosed), 
+PRIORVALUE( IsClosed), 
+NOT( IsClosed), 
+NOT($Profile.Name = &quot;System Administrator&quot;))</description>
+        <errorConditionFormula>AND( 
+ISCHANGED( IsClosed), 
+PRIORVALUE( IsClosed), 
+NOT( IsClosed), 
+$Profile.Name&lt;&gt;&quot;System Administrator&quot;)</errorConditionFormula>
+        <errorMessage>You cannot change a deal after the deal is closed. Please contact Administrator</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lock_lost_opportunities_from_editing</fullName>
+        <active>true</active>
+        <description>Users can close the opportunity upon creation but cannot change if it is closed. System admins can however, make the required changes.</description>
+        <errorConditionFormula>AND(
+   $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+   PRIORVALUE(LastModifiedDate) &lt; NOW(),
+   OR(
+      AND(        
+           TEXT(StageName) = &apos;Closed Lost&apos;,
+           NOT(ISCHANGED(StageName))
+          ),
+      AND(
+           ISCHANGED(StageName),
+           TEXT(PRIORVALUE(StageName)) = &apos;Closed Lost&apos;
+         )
+     )
+  )</errorConditionFormula>
+        <errorMessage>You cannot change a closed opportunity. Please contact your administrator.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lock_won_opportunities_from_editing</fullName>
+        <active>true</active>
+        <description>Users can close the opportunity upon creation but cannot change if it is closed. System admins can however, make the required changes.</description>
+        <errorConditionFormula>AND(
+    $Profile.Name &lt;&gt; &apos;System Administrator&apos;,
+   PRIORVALUE(LastModifiedDate) &lt; NOW(),
+   OR(
+      AND(        
+           TEXT(StageName) = &apos;Closed Won&apos;,
+           NOT(ISCHANGED(StageName))
+          ),
+      AND(
+           ISCHANGED(StageName),
+           TEXT(PRIORVALUE(StageName)) = &apos;Closed Won&apos;
+         )
+     )
+  )</errorConditionFormula>
+        <errorMessage>You cannot change a closed opportunity. Please contact your administrator.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Overdue_Creation</fullName>
+        <active>true</active>
+        <description>Open Opportunities are not allowed to have a close date in the past</description>
+        <errorConditionFormula>AND(
+IsClosed = False,
+ CloseDate &lt;  TODAY() ,  $User.Username &lt;&gt; &apos;integration@mannai.com.qa&apos;)</errorConditionFormula>
+        <errorDisplayField>CloseDate</errorDisplayField>
+        <errorMessage>Please select a Close Date in the future for open Opportunities!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Start_End_Date</fullName>
+        <active>true</active>
+        <description>When a deal is closed there has to be a start and end date.</description>
+        <errorConditionFormula>AND(
+OR(
+TEXT( Contract_End_Date__c )=&quot;&quot;,
+TEXT( Contract_Start_Date__c )=&quot;&quot;),
+TEXT( StageName )=&quot;Closed Won&quot;,
+$Profile.Name&lt;&gt;&quot;System Administrator&quot;
+)</errorConditionFormula>
+        <errorDisplayField>Contract_Start_Date__c</errorDisplayField>
+        <errorMessage>Please fill in a Contract Start and End Date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Start_after_close_Date</fullName>
+        <active>true</active>
+        <description>Contract Start Date cannot be before Close Date.</description>
+        <errorConditionFormula>AND(
+ Contract_Start_Date__c &lt; CloseDate ,
+$Profile.Name &lt;&gt;&quot;System Administrator&quot;)</errorConditionFormula>
+        <errorDisplayField>Contract_Start_Date__c</errorDisplayField>
+        <errorMessage>Please select a Contract Start Date which is not before the Close Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>closed_date</fullName>
+        <active>true</active>
+        <description>Can&apos;t change to closed won if 
+GM% blank or zero,
+no start or end date,
+close date in future</description>
+        <errorConditionFormula>AND(
+IsClosed = TRUE,
+CloseDate &gt; TODAY (),
+$Profile.Name&lt;&gt;&quot;System Administrator&quot;
+)</errorConditionFormula>
+        <errorDisplayField>CloseDate</errorDisplayField>
+        <errorMessage>The Close Date cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>closed_lost_past</fullName>
+        <active>true</active>
+        <description>Closed date can only be in the current month</description>
+        <errorConditionFormula>And( 
+
+$Profile.Name&lt;&gt;&quot;System Administrator&quot;, 
+ISPICKVAL(StageName, &apos;Closed Lost&apos;), 
+or(MONTH( CloseDate ) &lt; MONTH ( TODAY()),YEAR( CloseDate ) &lt; YEAR ( TODAY()))
+)</errorConditionFormula>
+        <errorDisplayField>CloseDate</errorDisplayField>
+        <errorMessage>The Close Date can only be in the current month.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>closed_won_past</fullName>
+        <active>true</active>
+        <errorConditionFormula>And(
+
+$Profile.Name&lt;&gt;&quot;System Administrator&quot;, 
+ISPICKVAL(StageName, &apos;Closed Won&apos;), 
+or(MONTH( CloseDate ) &lt; MONTH ( TODAY()),YEAR( CloseDate ) &lt; YEAR ( TODAY())) 
+
+)</errorConditionFormula>
+        <errorDisplayField>CloseDate</errorDisplayField>
+        <errorMessage>The Close Date can only be in the current month.</errorMessage>
+    </validationRules>
+</CustomObject>
