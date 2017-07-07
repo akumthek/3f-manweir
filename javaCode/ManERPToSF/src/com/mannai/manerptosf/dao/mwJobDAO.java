@@ -11,6 +11,7 @@ import javax.persistence.TypedQuery;
 
 import com.mannai.manerptosf.entity.mwJob;
 
+/* Java Entity class to map Job from ManERP to Salesforce object */
 public class mwJobDAO extends DAO{
 	
 	public mwJobDAO(Logger logger, EntityManager em) {
